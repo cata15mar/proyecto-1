@@ -52,9 +52,7 @@
       </div>
     </nav>
 
-    <section id="inicio">
-      <h2>Inicio</h2>
-    </section>
+    <section id="inicio"></section>
 
     <section id="nosotros" class="container my-5">
       <h2 class="text-center mb-4">Nosotros</h2>
@@ -156,29 +154,35 @@
     </section>
 
     <section id="contacto" class="container my-5">
-      <form>
       <h2 class="text-center mb-4">Contacto</h2>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"
-          ><i class='bx  bx-phone'></i> Telefono</label
-        >
-        <input
-          type="number"
-          class="form-control"
-          id="numerotelefonico"
-        />
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label"
-          ><i class='bx  bx-discussion'></i>Mensaje</label
-        >
-        <textarea
-          class="form-control"
-          id="mensaje"
-          rows="3"
-        ></textarea>
-      </div>
-      <button type="button" class="btn btn-primary">Enviar</button>
+
+      <form id="formContacto">
+        <div class="mb-3">
+          <label class="form-label">
+            <i class="bx bx-phone"></i> Teléfono
+          </label>
+          <input
+            type="number"
+            class="form-control"
+            id="numerotelefonico"
+            placeholder="Ej: 3001234567"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">
+            <i class="bx bx-discussion"></i> Mensaje
+          </label>
+          <textarea
+            class="form-control"
+            id="mensaje"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
       </form>
     </section>
 
@@ -187,5 +191,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
