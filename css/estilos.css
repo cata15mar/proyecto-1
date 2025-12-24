@@ -19,3 +19,22 @@ html {
   height: 400px;
   object-fit: cover;
 }
+
+#btnWhatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  z-index: 1000;
+}
+#btnWhatsapp:hover {
+  background-color: #25d366; /* verde WhatsApp más brillante */
+}
+
