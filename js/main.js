@@ -31,3 +31,9 @@ btnWhatsapp.addEventListener("click", () => {
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
   window.open(url, "_blank");
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+        const year = new Date().getFullYear();
+        document.getElementById("current-year").textContent = year;
+    });
